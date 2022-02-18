@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud7-colorapp
+spec:
+  selector:
+    matchLabels:
+      app: cloud7-colorapp
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: cloud7-colorapp
+    spec:
+      containers:
+      - name: colorapp
+        image: jayashreeumale/cloud7-colorapp
+        ports:
+        - containerPort: 3000
