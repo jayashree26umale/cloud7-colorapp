@@ -6,3 +6,4 @@ aghfasdhv
 manifest
 testing
 added secret
+abc.txt
